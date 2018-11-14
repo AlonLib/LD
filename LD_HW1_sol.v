@@ -1,4 +1,4 @@
-// Arithmetic logic unit
+// EX1: Arithmetic logic unit
 module ALU (a, b, alu_control, out);
   input [31:0] a, b;
   input [2:0] alu_control;
@@ -22,7 +22,8 @@ module ALU (a, b, alu_control, out);
 		endcase
 endmodule
 
-// Parameterized mux
+
+// EX2: Parameterized mux
 module mux3 #(parameter WIDTH=8) (a, b, c, select, out);
   // select | out
   input [WIDTH-1:0] a, b, c;
@@ -42,7 +43,8 @@ module mux3 #(parameter WIDTH=8) (a, b, c, select, out);
 	endcase
 endmodule
 
-// Simple FSM
+
+// EX3: Simple FSM
 module simon1
 (
 	input wire clock, reset,
